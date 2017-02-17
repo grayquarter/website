@@ -72,10 +72,12 @@
         <h2>Sign up and we'll let you know when we launch</h2>
         <p>If you would like to receive <strong>news</strong> please send us your email address below:</p>
 		<div id="signupform" class="sb-search clearfix">
-			<form action="https://formspree.io/info@grayquarter.com" method="post" id="contact" class="clearfix">
-				<input class="sb-search-input" placeholder="Enter email ..." type="email" value="">
-				<input class="sb-search-submit" value="" type="submit">
-				<button class="formbutton" type="submit" value="Send"><span class="fa fa-search"></span></button>
+		
+		<form action="//formspree.io/info@grayquarter.com" method="POST">
+		<input class="sb-search-input" type="email" name="_replyto">
+		<input class="sb-search-submit" type="submit" value="">
+			<button class="formbutton" type="submit">
+			<input type="hidden" name="_next" value="http://www.grayquarter.com/index.html"> 
 			</form>
 		</div>
 	
