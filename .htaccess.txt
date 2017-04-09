@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^grayquarter\.com
+RewriteRule (.*) http://www.grayquarter.com/$1 [R=301,L]
