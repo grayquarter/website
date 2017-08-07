@@ -430,13 +430,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                        <p><strong>&copy; 2017 Gray Quarter, Inc.</strong> | <a data-toggle="modal" href="#myModal">Hosted Services Support Agreement</a></p>
+                        <p><strong>&copy; 2017 Gray Quarter, Inc.</strong> | <a data-toggle="modal" href="#tosAgree">Hosted Services Support Agreement</a> | <a data-toggle="modal" href="#privacyPolicy">Privacy Policy</a></p>
 
                     </div>
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="tosAgree" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
@@ -446,6 +446,22 @@
                             <h4 class="modal-title">Gray Quarter<br/>Hosted Service - Support Level Agreement</h4>
                         </div>
                         <div id='loadTos'></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="privacyPolicy" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div id='loadPrivacy'></div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
@@ -468,6 +484,7 @@
     <script type="text/javascript">
         jQuery(document).ready(function () {
             jQuery("#loadTos").load("./tos.html #ToS");
+            jQuery("#loadPrivacy").load("./privacypolicy.html");
         });
     </script>
 </body>
