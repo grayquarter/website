@@ -991,9 +991,9 @@ section.comments {
 
 section.comments .partner .img-responsive {
     margin: 0.5% auto 5% auto;
-    padding: 2px;
+    /*padding: 2px; 
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 5px; */
     background: rgba(0, 0, 0, 0.4)
 }
 
